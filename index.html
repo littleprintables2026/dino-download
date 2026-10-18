@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Your Coloring Pages</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; background-color: #FFF8DC; }
+        .box { background: white; padding: 30px; border-radius: 10px; max-width: 500px; margin: auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .btn { display: inline-block; background-color: #4CAF50; color: white; padding: 15px 30px; font-size: 20px; text-decoration: none; border-radius: 5px; margin: 20px 0; font-weight: bold; }
+        .password { font-size: 24px; color: #d32f2f; font-weight: bold; background: #ffebee; padding: 10px 20px; border-radius: 5px; margin: 20px 0; display: inline-block;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Thank You for Your Purchase!</h1>
+        <p>Your download should start automatically...</p>
+        
+        <a href="Dinosaur_Pack.zip" class="btn">📥 Click Here to Download</a>
+        
+        <p>Please use this password to unzip your files:</p>
+        <div class="password">kidsart123</div>
+        
+        <p style="font-size: 14px; color: #777;">(Please save this password. If you need help, email us at w2364389747@zohomail.cn)</p>
+    </div>
+
+    <script>
+        window.onload = function() {
+            var link = document.createElement('a');
+            link.href = 'Dinosaur_Pack.zip';
+            link.download = 'Dinosaur_Pack.zip';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+</body>
+</html>
